@@ -47,3 +47,17 @@ If:
 
 ### Example:
     Sum of Divisors of 84 is (2^(2+1) - 1)/(2 - 1) * (3^(1+1) - 1)/(3 - 1) * (7^(1+1) - 1)/(7 - 1) = 7*4*8 = 224
+
+## Product of Factors
+    The product of all positive divisors of a number n (denoted by P(n)) can be calculated using its prime factorization:
+    If:
+        n = p1^a1 * p2^a2 * p3^a3 * ... * pk^ak
+        Then:
+        P(n) = n^(d(n)/2)
+        Why?
+        Divisor can be paired as (d,n/d) and each pair multiplies to n. Since there are d(n) divisors, there will be d(n)/2 pairs.
+        Example:
+            for 84:
+                d(84) = 12
+                P(84) = 84^(12/2) = 84^6
+    
