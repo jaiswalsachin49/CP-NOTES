@@ -56,3 +56,53 @@ Each position in binary number represents a power of 2 (1s,2s,4s,8s)
 
     Why this matters in CP? 
     This explains why the maximum positive 32-bit integer is 2^31 - 1 = 2147483647. If you add 1 to this, it will overflow and become a negative number.
+
+## The Bitwise Operators : AND, OR, NOT
+    These operators compare the two numbers bit by bit, matching up their respective positions.
+
+    Bitwise AND (&): The AND operator return 1 only if both corresponding bits are 1.
+    Bit A    |  Bit B    |  Result
+    0        |  0        |  0
+    0        |  1        |  0
+    1        |  0        |  0
+    1        |  1        |  1
+
+    Mental Model : 
+    Think of AND as an intersection or a filter. It requires strict agreement.
+    Example: 13 & 6
+    13 = 1101
+    6  = 0110
+    ----------------
+    Result = 0100 (which is 4 in decimal)
+    
+    ________________________________________________________________________________________________________________
+
+    Bitwise OR (|): The OR operator returns 1 if at least one of the corresponding bits is 1.
+    Bit A    |  Bit B    |  Result
+    0        |  0        |  0
+    0        |  1        |  1
+    1        |  0        |  1
+    1        |  1        |  1
+
+    Mental Model :
+    Think of OR as a union or a spotlight. It preserves every 1 it sees.
+    Example: 13 | 6
+    13 = 1101
+    6  = 0110
+    ----------------
+    Result = 1111 (which is 15 in decimal)
+    
+    ________________________________________________________________________________________________________________
+
+    Bitwise XOR (^): The XOR operator returns 1 only if the corresponding bits are different.
+    Bit A    |  Bit B    |  Result
+    0        |  0        |  0
+    0        |  1        |  1
+    1        |  0        |  1
+    1        |  1        |  0
+
+    Mental Model :
+    XOR is arguably the most tested bitwise operator in CP. You should memorize two ways to think about it.
+    1. The Difference Maker: It Flags exactly where two disagree.
+    2. Addition without Carry:  
+    
